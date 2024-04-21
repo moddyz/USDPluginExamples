@@ -1,0 +1,22 @@
+{
+    "Plugins": [
+        {
+            "Info": {
+                "Types": {
+                    "HdGpTriGenerativeProceduralPlugin": {
+                        "bases": [
+                            "HdGpGenerativeProceduralPlugin"
+                        ],
+                        "displayName": "TrianglePerPoint",
+                        "priority": 1
+                    }
+                }
+            },
+            "LibraryPath": "@PLUG_INFO_LIBRARY_PATH@", 
+            "Name": "hdGpTri",
+            "ResourcePath": "@PLUG_INFO_RESOURCE_PATH@", 
+            "Root": "@PLUG_INFO_ROOT@", 
+            "Type": "library"
+        }
+    ]
+}

@@ -11,6 +11,7 @@ add_subdirectory(usdviewTri)
 add_subdirectory(usdTriImaging)
 add_subdirectory(usdTriFileFormat)
 add_subdirectory(hdTri)
+add_subdirectory(hdGpTri)
 
 # Install top-level plugInfo for including per-library plugInfo(s).
 install(

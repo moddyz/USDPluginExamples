@@ -1,0 +1,17 @@
+#usda 1.0
+
+def Mesh "triangle"
+{
+    int[] faceVertexCounts = [3]
+    int[] faceVertexIndices = [0, 1, 2]
+    point3f[] points = [(0, 0.57735026, 0), (-0.5, -0.28867513, 0), (0.5, -0.28867513, 0)]
+}
+
+def GenerativeProcedural "trianglePerPointProc" (
+    prepend apiSchemas = ["HydraGenerativeProceduralAPI"]
+)
+{
+    token primvars:hdGp:proceduralType = "TrianglePerPoint"
+    rel primvars:sourceMeshPath = </triangle>
+    float primvars:scale = 2
+}
